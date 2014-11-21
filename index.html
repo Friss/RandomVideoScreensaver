@@ -24,6 +24,8 @@
       for (var i = 1; i <= 20; i++) {
         nums.push(i.toString());
       }
+      num = nums[Math.floor(Math.random() * nums.length)];
+      document.getElementById("video").src = "videos/" + num + ".webm"
       setInterval(function() {
         num = nums[Math.floor(Math.random() * nums.length)];
         document.getElementById("video").src = "videos/" + num + ".webm"
